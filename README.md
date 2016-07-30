@@ -1,12 +1,18 @@
 # ftp deployer
 
-sync gitbook to ftp server after each build
+sync gitbook to ftp server after each build.
 
-not work yet. I do not know why.
+## How it's implemented
+
+The plugin call bash `ftpsync` via `child_process.exec`. So you must install `ftpsync` globally.
+
+When I call `ftpsync` in `node`, there is no result returned.
+
 
 ## Install
 
 ```
+$ sudo npm install ftpsync -g
 $ npm install gitbook-plugin-ftpsync --save
 ```
 
