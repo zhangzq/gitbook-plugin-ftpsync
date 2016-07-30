@@ -23,5 +23,9 @@
   "homepage": "https://github.com/zhangzq/gitbook-plugin-ftpsync#readme",
   "dependencies": {
     "ftpsync": "0.1.10"
+  },
+  "engines": {
+    "gitbook": "*"
   }
+
 }

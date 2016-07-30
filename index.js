@@ -5,6 +5,8 @@ var get_config = function (gitbook, name) {
 };
 
 module.exports = {
+    book: {
+    },
     hooks: {
         "finish": function () {
             var gitbook = this;
