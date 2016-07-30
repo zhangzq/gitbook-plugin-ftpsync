@@ -1,0 +1,27 @@
+{
+  "name": "gitbook-plugin-ftpsync",
+  "version": "1.0.0",
+  "description": "sync gitbook to ftp server after each build",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhangzq/gitbook-plugin-ftpsync.git"
+  },
+  "keywords": [
+    "gitbook",
+    "plugin",
+    "ftp"
+  ],
+  "author": "zhangzq",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/zhangzq/gitbook-plugin-ftpsync/issues"
+  },
+  "homepage": "https://github.com/zhangzq/gitbook-plugin-ftpsync#readme",
+  "dependencies": {
+    "ftpsync": "*"
+  }
+}
