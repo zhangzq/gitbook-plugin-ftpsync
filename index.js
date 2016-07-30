@@ -11,7 +11,7 @@ module.exports = {
             var config = get_config(this, "ftpsync");
 
             ftpsync.settings = {
-                local: config.public_dir,
+                local: "./_book",
                 host: config.host,
                 port: config.port || 21,
                 remote: config.remote || '/',
