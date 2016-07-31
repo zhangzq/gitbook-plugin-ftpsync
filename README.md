@@ -1,3 +1,5 @@
+not work yet. please skip this plugin.
+
 # ftp deployer
 
 sync gitbook to ftp server after each build.

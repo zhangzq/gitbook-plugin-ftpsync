@@ -1,6 +1,6 @@
 {
   "name": "gitbook-plugin-ftpsync",
-  "version": "2.0.1",
+  "version": "2.0.3",
   "description": "sync gitbook to ftp server after each build",
   "main": "index.js",
   "scripts": {

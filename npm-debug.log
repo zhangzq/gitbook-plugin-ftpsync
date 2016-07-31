@@ -1,0 +1,109 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/nodejs', '/usr/bin/npm', 'publish' ]
+2 info using npm@3.10.5
+3 info using node@v6.2.2
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   escapedName: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/home/zhangzq/gitbook-plugin/gitbook-plugin-ftpsync',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /home/zhangzq/.npm/gitbook-plugin-ftpsync/2.0.1/package.tgz not in flight; packing
+9 verbose correctMkdir /home/zhangzq/.npm correctMkdir not in flight; initializing
+10 info lifecycle gitbook-plugin-ftpsync@2.0.1~prepublish: gitbook-plugin-ftpsync@2.0.1
+11 silly lifecycle gitbook-plugin-ftpsync@2.0.1~prepublish: no script for prepublish, continuing
+12 verbose tar pack [ '/home/zhangzq/.npm/gitbook-plugin-ftpsync/2.0.1/package.tgz',
+12 verbose tar pack   '/home/zhangzq/gitbook-plugin/gitbook-plugin-ftpsync' ]
+13 verbose tarball /home/zhangzq/.npm/gitbook-plugin-ftpsync/2.0.1/package.tgz
+14 verbose folder /home/zhangzq/gitbook-plugin/gitbook-plugin-ftpsync
+15 verbose addLocalTarball adding from inside cache /home/zhangzq/.npm/gitbook-plugin-ftpsync/2.0.1/package.tgz
+16 verbose correctMkdir /home/zhangzq/.npm correctMkdir not in flight; initializing
+17 silly cache afterAdd gitbook-plugin-ftpsync@2.0.1
+18 verbose afterAdd /home/zhangzq/.npm/gitbook-plugin-ftpsync/2.0.1/package/package.json not in flight; writing
+19 verbose correctMkdir /home/zhangzq/.npm correctMkdir not in flight; initializing
+20 verbose afterAdd /home/zhangzq/.npm/gitbook-plugin-ftpsync/2.0.1/package/package.json written
+21 silly publish { name: 'gitbook-plugin-ftpsync',
+21 silly publish   version: '2.0.1',
+21 silly publish   description: 'sync gitbook to ftp server after each build',
+21 silly publish   main: 'index.js',
+21 silly publish   scripts: { test: 'echo "Error: no test specified" && exit 1' },
+21 silly publish   repository:
+21 silly publish    { type: 'git',
+21 silly publish      url: 'git+https://github.com/zhangzq/gitbook-plugin-ftpsync.git' },
+21 silly publish   keywords: [ 'gitbook', 'plugin', 'ftp' ],
+21 silly publish   author: { name: 'zhangzq' },
+21 silly publish   license: 'GPL-3.0',
+21 silly publish   bugs: { url: 'https://github.com/zhangzq/gitbook-plugin-ftpsync/issues' },
+21 silly publish   homepage: 'https://github.com/zhangzq/gitbook-plugin-ftpsync#readme',
+21 silly publish   dependencies: { ftpsync: '0.1.10' },
+21 silly publish   engines: { gitbook: '*' },
+21 silly publish   readme: '# ftp deployer\n\nsync gitbook to ftp server after each build.\n\n## How it\'s implemented\n\nThe plugin call bash `ftpsync` via `child_process.exec`. So you must install `ftpsync` globally.\n\nWhen I call `ftpsync` in `node`, there is no result returned.\n\n\n## Install\n\n```\n$ sudo npm install ftpsync -g\n$ npm install gitbook-plugin-ftpsync --save\n```\n\n## Config `book.json`\n\n```js\n{\n    plugins: ["ftpsync"],\n    pluginsConfig: {\n        "ftpsync": {\n            "host": "xxx.org",\n            "port": "21",\n            "user": "usr_name",                              \n            "pass": "ftp_password",                                 \n            "remote": "/domains/xxx.org/public_html/"\n        } \n    }\n}\n```\n\n## Caution\n\nsince the usr/password of your ftp is saved in `book.json`, you need keep your `book.json` in private.\n',
+21 silly publish   readmeFilename: 'README.md',
+21 silly publish   gitHead: 'b271697de57326d838a586674b9e88d94464d742',
+21 silly publish   _id: 'gitbook-plugin-ftpsync@2.0.1',
+21 silly publish   _shasum: 'ab4521d8538284183930abadd22bd633e28b4032',
+21 silly publish   _from: '.' }
+22 verbose getPublishConfig undefined
+23 silly mapToRegistry name gitbook-plugin-ftpsync
+24 silly mapToRegistry using default registry
+25 silly mapToRegistry registry http://registry.npmjs.org/
+26 silly mapToRegistry data Result {
+26 silly mapToRegistry   raw: 'gitbook-plugin-ftpsync',
+26 silly mapToRegistry   scope: null,
+26 silly mapToRegistry   escapedName: 'gitbook-plugin-ftpsync',
+26 silly mapToRegistry   name: 'gitbook-plugin-ftpsync',
+26 silly mapToRegistry   rawSpec: '',
+26 silly mapToRegistry   spec: 'latest',
+26 silly mapToRegistry   type: 'tag' }
+27 silly mapToRegistry uri http://registry.npmjs.org/gitbook-plugin-ftpsync
+28 verbose publish registryBase http://registry.npmjs.org/
+29 silly publish uploading /home/zhangzq/.npm/gitbook-plugin-ftpsync/2.0.1/package.tgz
+30 verbose request uri http://registry.npmjs.org/gitbook-plugin-ftpsync
+31 verbose request sending authorization for write operation
+32 info attempt registry request try #1 at 8:12:27 PM
+33 verbose request using bearer token for auth
+34 verbose request id 1d423c29a395ebc2
+35 http request PUT http://registry.npmjs.org/gitbook-plugin-ftpsync
+36 http 403 http://registry.npmjs.org/gitbook-plugin-ftpsync
+37 verbose headers { 'content-type': 'application/json',
+37 verbose headers   'cache-control': 'max-age=300',
+37 verbose headers   'content-length': '95',
+37 verbose headers   'accept-ranges': 'bytes',
+37 verbose headers   date: 'Sun, 31 Jul 2016 12:12:29 GMT',
+37 verbose headers   via: '1.1 varnish',
+37 verbose headers   connection: 'keep-alive',
+37 verbose headers   'x-served-by': 'cache-lcy1120-LCY',
+37 verbose headers   'x-cache': 'MISS',
+37 verbose headers   'x-cache-hits': '0',
+37 verbose headers   'x-timer': 'S1469967148.157196,VS0,VE1004',
+37 verbose headers   vary: 'Accept-Encoding' }
+38 verbose request invalidating /home/zhangzq/.npm/registry.npmjs.org/gitbook-plugin-ftpsync on PUT
+39 error publish Failed PUT 403
+40 verbose stack Error: "You cannot publish over the previously published version 2.0.1." : gitbook-plugin-ftpsync
+40 verbose stack     at makeError (/usr/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+40 verbose stack     at CachingRegistryClient.<anonymous> (/usr/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:252:14)
+40 verbose stack     at Request._callback (/usr/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+40 verbose stack     at Request.self.callback (/usr/lib/node_modules/npm/node_modules/request/request.js:200:22)
+40 verbose stack     at emitTwo (events.js:106:13)
+40 verbose stack     at Request.emit (events.js:191:7)
+40 verbose stack     at Request.<anonymous> (/usr/lib/node_modules/npm/node_modules/request/request.js:1067:10)
+40 verbose stack     at emitOne (events.js:101:20)
+40 verbose stack     at Request.emit (events.js:188:7)
+40 verbose stack     at IncomingMessage.<anonymous> (/usr/lib/node_modules/npm/node_modules/request/request.js:988:12)
+41 verbose statusCode 403
+42 verbose pkgid gitbook-plugin-ftpsync
+43 verbose cwd /home/zhangzq/gitbook-plugin/gitbook-plugin-ftpsync
+44 error Linux 3.13.0-86-generic
+45 error argv "/usr/bin/nodejs" "/usr/bin/npm" "publish"
+46 error node v6.2.2
+47 error npm  v3.10.5
+48 error code E403
+49 error "You cannot publish over the previously published version 2.0.1." : gitbook-plugin-ftpsync
+50 error If you need help, you may report this error at:
+50 error     <https://github.com/npm/npm/issues>
+51 verbose exit [ 1, true ]
